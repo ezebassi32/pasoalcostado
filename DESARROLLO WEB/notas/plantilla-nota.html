@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- ======================================================================
+       METADATOS EDITORIALES DE LA NOTA (MODIFICAR SEGÚN EL ARTÍCULO)
+       ====================================================================== -->
+  <!-- EDITAR AQUÍ: Título para el navegador y motores de búsqueda -->
+  <title>[TÍTULO DE LA NOTA] — Paso al Costado</title>
+  
+  <!-- EDITAR AQUÍ: Descripción breve / resumen para redes sociales y buscadores -->
+  <meta name="description" content="[BAJADA O RESUMEN DE LA NOTA: Síntesis de dos a tres líneas que exponga el tema y su relevancia]">
+  
+  <!-- EDITAR AQUÍ: Autor/a del artículo -->
+  <meta name="author" content="[NOMBRE Y APELLIDO DEL AUTOR/A]">
+
+  <!-- Favicon e Icono de Identidad -->
+  <link rel="icon" type="image/jpeg" href="../img/logo/logo-paso-al-costado.jpg">
+
+  <!-- Hojas de Estilo -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/article.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       1. CABECERA (HEADER)
+       ====================================================================== -->
+  <header class="site-header" role="banner">
+    <!-- Cintillo Superior -->
+    <div class="top-bar">
+      <div class="container top-bar__inner">
+        <span class="top-bar__date" id="current-date">Martes, 22 de Septiembre de 2026</span>
+        <span class="top-bar__motto">“Sacar el pie del acelerador: no solo qué pasó, sino por qué importa”</span>
+        <div class="top-bar__socials" aria-label="Redes sociales del medio">
+          <a href="https://www.instagram.com/pasoalcostado_/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram @pasoalcostado_">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.tiktok.com/@pasoalcostado_" target="_blank" rel="noopener noreferrer" class="social-link" title="TikTok @pasoalcostado_">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-1.01-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            <span>TikTok</span>
+          </a>
+          <a href="https://www.youtube.com/@pasoalcostado" target="_blank" rel="noopener noreferrer" class="social-link" title="YouTube @pasoalcostado">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            <span>YouTube</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bloque de Marca -->
+    <div class="brand-header">
+      <div class="container brand-header__inner">
+        <a href="../index.html" class="brand-logo-link" aria-label="Paso al Costado - Ir a la portada">
+          <img src="../img/logo/logo-paso-al-costado.jpg" alt="Logotipo de Paso al Costado" class="brand-logo-img">
+          <span class="brand-title">Paso al Costado</span>
+        </a>
+        <p class="brand-tagline">Periodismo de actualidad con mirada explicativa</p>
+      </div>
+    </div>
+
+    <!-- Navegación Principal -->
+    <nav class="nav-bar" aria-label="Navegación principal">
+      <div class="container nav-bar__inner">
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menú de navegación">
+          <span class="menu-toggle__icon" aria-hidden="true">
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+          </span>
+          <span>Secciones</span>
+        </button>
+
+        <ul class="main-menu" role="menubar">
+          <li class="main-menu__item" role="none"><a href="../index.html" class="main-menu__link" role="menuitem">Inicio</a></li>
+          <li class="main-menu__item" role="none"><a href="../secciones/actualidad.html" class="main-menu__link" role="menuitem">Actualidad</a></li>
+          <li class="main-menu__item" role="none"><a href="../secciones/sociedad.html" class="main-menu__link" role="menuitem">Sociedad</a></li>
+          <li class="main-menu__item" role="none"><a href="../secciones/deportes.html" class="main-menu__link" role="menuitem">Deportes</a></li>
+          <li class="main-menu__item" role="none"><a href="../secciones/politica.html" class="main-menu__link" role="menuitem">Política</a></li>
+          <li class="main-menu__item" role="none"><a href="../secciones/cultura.html" class="main-menu__link" role="menuitem">Cultura</a></li>
+          <li class="main-menu__item" role="none"><a href="../multimedia/index.html" class="main-menu__link main-menu__link--special" role="menuitem">Multimedia</a></li>
+          <li class="main-menu__item" role="none"><a href="../quienes-somos.html" class="main-menu__link" role="menuitem">Quiénes Somos</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Menú Desplegable Móvil -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Menú principal de navegación">
+      <div class="mobile-nav__header">
+        <span class="brand-tagline">Paso al Costado</span>
+        <button class="mobile-nav__close" id="mobile-nav-close" aria-label="Cerrar menú">&times;</button>
+      </div>
+      <ul class="mobile-nav__list">
+        <li><a href="../index.html" class="mobile-nav__link">Inicio</a></li>
+        <li><a href="../secciones/actualidad.html" class="mobile-nav__link">Actualidad</a></li>
+        <li><a href="../secciones/sociedad.html" class="mobile-nav__link">Sociedad</a></li>
+        <li><a href="../secciones/deportes.html" class="mobile-nav__link">Deportes</a></li>
+        <li><a href="../secciones/politica.html" class="mobile-nav__link">Política</a></li>
+        <li><a href="../secciones/cultura.html" class="mobile-nav__link">Cultura</a></li>
+        <li><a href="../multimedia/index.html" class="mobile-nav__link" style="color: var(--color-brand-primary);">Multimedia & Podcast</a></li>
+        <li><a href="../quienes-somos.html" class="mobile-nav__link">Quiénes Somos</a></li>
+      </ul>
+      <div class="mobile-nav__footer">
+        <p style="font-size: var(--font-size-meta); color: var(--color-text-muted); margin-bottom: var(--space-sm);">Seguinos en nuestras plataformas oficiales:</p>
+        <div style="display: flex; gap: var(--space-md);">
+          <a href="https://www.instagram.com/pasoalcostado_/" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+          <a href="https://www.tiktok.com/@pasoalcostado_" target="_blank" rel="noopener noreferrer" class="social-link">TikTok</a>
+          <a href="https://www.youtube.com/@pasoalcostado" target="_blank" rel="noopener noreferrer" class="social-link">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       2. CONTENIDO DEL ARTÍCULO PERIODÍSTICO
+       ====================================================================== -->
+  <main class="site-main article-page" id="main-content">
+    <article class="article-container" itemscope itemtype="https://schema.org/NewsArticle">
+      
+      <!-- 2.1. Miga de Pan (Breadcrumbs) -->
+      <nav class="breadcrumbs" aria-label="Ubicación de la nota">
+        <a href="../index.html">Inicio</a>
+        <span class="breadcrumbs__sep" aria-hidden="true">/</span>
+        <!-- EDITAR AQUÍ: Enlace a la sección correspondiente -->
+        <a href="../secciones/actualidad.html">[SECCIÓN]</a>
+        <span class="breadcrumbs__sep" aria-hidden="true">/</span>
+        <span class="breadcrumbs__current" aria-current="page">Nota</span>
+      </nav>
+
+      <!-- 2.2. Encabezado de la Nota -->
+      <header class="article-header">
+        <!-- EDITAR AQUÍ: Volanta temático-territorial -->
+        <span class="badge-volanta" itemprop="articleSection">[VOLANTA / ENFOQUE EDITORIAL]</span>
+        
+        <!-- EDITAR AQUÍ: Título principal de la nota (H1) -->
+        <h1 class="article-title" itemprop="headline">
+          [TÍTULO DE LA NOTA: TITULAR PERIODÍSTICO PRECISO Y DE ALTO IMPACTO]
+        </h1>
+
+        <!-- EDITAR AQUÍ: Bajada o copete explicativo -->
+        <p class="article-lead" itemprop="description">
+          [Bajada explicativa: una síntesis de dos a tres líneas que exponga los antecedentes del hecho, por qué importa en la vida cotidiana y qué interrogantes abre la situación].
+        </p>
+
+        <!-- Ficha de Autoría y Metadatos -->
+        <div class="article-byline">
+          <div class="article-byline__author-box">
+            <div class="article-byline__avatar-placeholder" aria-hidden="true">
+              <!-- Iniciales del autor/a -->
+              [IN]
+            </div>
+            <div class="article-byline__meta">
+              <!-- EDITAR AQUÍ: Nombre y rol de autoría -->
+              <span class="article-byline__name" itemprop="author">[NOMBRE DEL AUTOR/A]</span>
+              <span class="article-byline__role">[ROL O ÁREA EN LA REDACCIÓN]</span>
+            </div>
+          </div>
+
+          <div class="article-byline__date">
+            <!-- EDITAR AQUÍ: Fecha de publicación (modificar también el atributo datetime) -->
+            <time datetime="2026-09-22" itemprop="datePublished">[DÍA, MES Y AÑO]</time>
+            <span>· [X MIN DE LECTURA]</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- 2.3. Fotografía Principal y Epígrafe -->
+      <div class="article-featured-media">
+        <figure>
+          <div class="card-media">
+            <!-- EDITAR AQUÍ: Para agregar foto real, reemplazar el placeholder por:
+                 <img src="../img/notas/nombre-foto.jpg" alt="Descripción de la imagen" itemprop="image"> -->
+            <div class="placeholder-media" role="img" aria-label="[Placeholder de imagen principal]">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+              <span>[IMAGEN PRINCIPAL DEL ARTÍCULO — 16:9]</span>
+            </div>
+          </div>
+          <!-- EDITAR AQUÍ: Epígrafe periodístico y crédito -->
+          <figcaption class="article-caption">
+            <span>[Epígrafe informativo: describe qué se observa en la fotografía, lugar y contexto del hecho].</span>
+            <span class="article-caption__credit">Foto: [CRÉDITO FOTOGRÁFICO / AGENCIA / COBERTURA PROPIA]</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- 2.4. Cuerpo del Artículo (Lectura Periodística) -->
+      <div class="article-body" itemprop="articleBody">
+        
+        <!-- Párrafo de apertura -->
+        <p>
+          [Primer párrafo: introducción y planteo del acontecimiento. Comienza a desarrollar la información contextualizando el hecho central y su relevancia inmediata para la audiencia].
+        </p>
+
+        <p>
+          [Segundo párrafo: profundización de los antecedentes. Qué ocurrió en las semanas o meses previos para llegar a este escenario y qué factores explican la situación].
+        </p>
+
+        <!-- EDITAR AQUÍ: Intertítulo H2 para estructurar la lectura -->
+        <h2>[INTERTÍTULO 1: ANTECEDENTES Y PERSPECTIVAS EN JUEGO]</h2>
+
+        <p>
+          [Desarrollo temático del primer intertítulo. Análisis de los datos, contrastes entre distintas fuentes consultadas y contexto económico, social o cultural vinculado].
+        </p>
+
+        <!-- EDITAR AQUÍ: Cita Destacada / Frase Textual Relevante -->
+        <blockquote class="pull-quote">
+          <p>“[Cita textual destacada o testimonio relevante que sintetiza el espíritu del informe y aporta una mirada directa sobre la problemática abordada]”.</p>
+          <cite>— [NOMBRE DE LA FUENTE / TESTIMONIO / CARGO]</cite>
+        </blockquote>
+
+        <p>
+          [Continuación del texto posterior a la cita: explicación de las implicancias de esas declaraciones y cómo se cruzan con otros testimonios o posturas].
+        </p>
+
+        <!-- Inserción Multimedia Opcional (Video de YouTube, Audio o Podcast) -->
+        <!-- Si no lleva video o podcast en la nota, este bloque puede eliminarse o comentarse -->
+        <div class="article-media-embed">
+          <div class="placeholder-media" style="background: var(--color-surface-dark); color: var(--color-text-on-dark);">
+            <svg viewBox="0 0 24 24" fill="#FF0000" style="width: 38px; height: 38px;" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            <span style="margin-top: 6px;">[INSERCIÓN MULTIMEDIA OPCIONAL: VIDEO DE YOUTUBE O EPISODIO DEL PODCAST]</span>
+            <span style="font-size: 0.75rem; color: var(--color-text-muted-on-dark); font-weight: normal; margin-top: 4px;">Pieza audiovisual complementaria producida por Paso al Costado</span>
+          </div>
+        </div>
+
+        <!-- EDITAR AQUÍ: Segundo Intertítulo H2 -->
+        <h2>[INTERTÍTULO 2: CONSECUENCIAS Y ESCENARIOS A FUTURO]</h2>
+
+        <p>
+          [Desarrollo de las consecuencias a corto y mediano plazo. De qué manera afecta esto la vida cotidiana de las personas y qué señales habrá que seguir en los próximos días].
+        </p>
+
+        <p>
+          [Párrafo de cierre o conclusiones periodísticas que dejan abierta la reflexión sin imponer conclusiones cerradas, fiel a la línea explicativa del medio].
+        </p>
+
+        <!-- Caja de Fuentes y Enlaces Consultados -->
+        <aside class="sources-box" aria-label="Fuentes y documentos de la nota">
+          <h3 class="sources-box__title">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            Fuentes y Documentos Consultados
+          </h3>
+          <ul class="sources-box__list">
+            <li><!-- EDITAR AQUÍ: Fuente 1 -->[Informe o documento oficial consultado, fecha y entidad emisora]</li>
+            <li><!-- EDITAR AQUÍ: Fuente 2 -->[Entrevista o testimonio propio obtenido por el equipo de redacción]</li>
+            <li><!-- EDITAR AQUÍ: Fuente 3 -->[Estadística, registro público o base de datos relevada]</li>
+          </ul>
+        </aside>
+
+      </div>
+
+      <!-- 2.5. Ficha de Autor/a al Pie -->
+      <footer class="author-bio-card" aria-label="Perfil de quien escribe">
+        <div class="author-bio-card__avatar" aria-hidden="true">
+          <!-- Iniciales -->
+          [IN]
+        </div>
+        <div class="author-bio-card__info">
+          <!-- EDITAR AQUÍ: Datos del autor/a -->
+          <h3 class="author-bio-card__name">[NOMBRE Y APELLIDO DEL AUTOR/A]</h3>
+          <p class="author-bio-card__role">[ROL / SECCIÓN A CARGO EN PASO AL COSTADO]</p>
+          <p class="author-bio-card__desc">
+            [Breve biografía del redactor/a: estudiante de Periodismo, intereses temáticos y vías de contacto profesional o redes].
+          </p>
+        </div>
+      </footer>
+
+      <!-- 2.6. Lecturas Relacionadas -->
+      <section class="related-section" aria-labelledby="related-title">
+        <h2 id="related-title" class="related-section__title">
+          <span>Seguí profundizando en esta sección</span>
+        </h2>
+        
+        <div class="grid-3-cols">
+          <!-- NOTA RELACIONADA 1 -->
+          <article class="card-focus">
+            <div>
+              <span class="badge-volanta">[SECCIÓN]</span>
+              <h3 class="card-focus__title">
+                <a href="../notas/plantilla-nota.html">[TÍTULO DE NOTA RELACIONADA 1]</a>
+              </h3>
+              <p class="card-focus__text">[Bajada breve que aporta contexto complementario a la lectura actual].</p>
+            </div>
+            <div class="meta-info">
+              <span>Por [AUTOR/A]</span>
+              <span class="meta-info__separator">·</span>
+              <time datetime="2026-09-22">[FECHA]</time>
+            </div>
+          </article>
+
+          <!-- NOTA RELACIONADA 2 -->
+          <article class="card-focus">
+            <div>
+              <span class="badge-volanta">[SECCIÓN]</span>
+              <h3 class="card-focus__title">
+                <a href="../notas/plantilla-nota.html">[TÍTULO DE NOTA RELACIONADA 2]</a>
+              </h3>
+              <p class="card-focus__text">[Bajada breve que aporta contexto complementario a la lectura actual].</p>
+            </div>
+            <div class="meta-info">
+              <span>Por [AUTOR/A]</span>
+              <span class="meta-info__separator">·</span>
+              <time datetime="2026-09-22">[FECHA]</time>
+            </div>
+          </article>
+
+          <!-- NOTA RELACIONADA 3 -->
+          <article class="card-focus">
+            <div>
+              <span class="badge-volanta">[SECCIÓN]</span>
+              <h3 class="card-focus__title">
+                <a href="../notas/plantilla-nota.html">[TÍTULO DE NOTA RELACIONADA 3]</a>
+              </h3>
+              <p class="card-focus__text">[Bajada breve que aporta contexto complementario a la lectura actual].</p>
+            </div>
+            <div class="meta-info">
+              <span>Por [AUTOR/A]</span>
+              <span class="meta-info__separator">·</span>
+              <time datetime="2026-09-22">[FECHA]</time>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- ======================================================================
+       3. PIE DE PÁGINA (FOOTER)
+       ====================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-col__title">Paso al Costado</h3>
+          <p class="footer-col__text">
+            Medio periodístico multimedial creado por estudiantes universitarios de Periodismo. Una propuesta para sacar el pie del acelerador y entender por qué importa aquello que pasa.
+          </p>
+          <p class="footer-col__text" style="font-weight: 600;">Redacción y producción independiente · 2026</p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col__title">Secciones</h3>
+          <ul class="footer-links">
+            <li><a href="../secciones/actualidad.html">Actualidad</a></li>
+            <li><a href="../secciones/sociedad.html">Sociedad</a></li>
+            <li><a href="../secciones/deportes.html">Deportes</a></li>
+            <li><a href="../secciones/politica.html">Política</a></li>
+            <li><a href="../secciones/cultura.html">Cultura (Música, Cine, Espectáculo)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col__title">Multimedia</h3>
+          <ul class="footer-links">
+            <li><a href="../multimedia/index.html">Hub Multimedia</a></li>
+            <li><a href="https://www.youtube.com/@pasoalcostado" target="_blank" rel="noopener noreferrer">Podcast en YouTube</a></li>
+            <li><a href="https://www.instagram.com/pasoalcostado_/" target="_blank" rel="noopener noreferrer">Instagram (@pasoalcostado_)</a></li>
+            <li><a href="https://www.tiktok.com/@pasoalcostado_" target="_blank" rel="noopener noreferrer">TikTok (@pasoalcostado_)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col__title">Institucional</h3>
+          <ul class="footer-links">
+            <li><a href="../quienes-somos.html">Quiénes Somos / Manifiesto</a></li>
+            <li><a href="../quienes-somos.html#equipo">Equipo de Redacción</a></li>
+            <li><a href="mailto:redaccion@pasoalcostado.com">[CORREO DE CONTACTO]</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Paso al Costado — Proyecto de Periodismo Multimedial Universitario.</p>
+        <p>Desarrollo web accesible y editable con estándares abiertos.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+</body>
+</html>
