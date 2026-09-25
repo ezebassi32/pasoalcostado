@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiénes Somos — Paso al Costado</title>
+  <meta name="description" content="Quiénes somos en Paso al Costado: manifiesto editorial, equipo de redacción y el compromiso de sacar el pie del acelerador para entender la realidad.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="img/logo/logo-paso-al-costado.jpg">
+
+  <!-- Hojas de Estilo -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/article.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       CABECERA (HEADER)
+       ====================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="top-bar">
+      <div class="container top-bar__inner">
+        <span class="top-bar__date" id="current-date">Martes, 22 de Septiembre de 2026</span>
+        <span class="top-bar__motto">“Sacar el pie del acelerador: no solo qué pasó, sino por qué importa”</span>
+        <div class="top-bar__socials" aria-label="Redes sociales del medio">
+          <a href="https://www.instagram.com/pasoalcostado_/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.tiktok.com/@pasoalcostado_" target="_blank" rel="noopener noreferrer" class="social-link" title="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-1.01-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            <span>TikTok</span>
+          </a>
+          <a href="https://www.youtube.com/@pasoalcostado" target="_blank" rel="noopener noreferrer" class="social-link" title="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            <span>YouTube</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-header">
+      <div class="container brand-header__inner">
+        <a href="index.html" class="brand-logo-link" aria-label="Paso al Costado - Ir a la portada">
+          <img src="img/logo/logo-paso-al-costado.jpg" alt="Logotipo de Paso al Costado" class="brand-logo-img">
+          <span class="brand-title">Paso al Costado</span>
+        </a>
+        <p class="brand-tagline">Periodismo de actualidad con mirada explicativa</p>
+      </div>
+    </div>
+
+    <nav class="nav-bar" aria-label="Navegación principal">
+      <div class="container nav-bar__inner">
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menú">
+          <span class="menu-toggle__icon" aria-hidden="true">
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+          </span>
+          <span>Secciones</span>
+        </button>
+
+        <ul class="main-menu" role="menubar">
+          <li class="main-menu__item" role="none"><a href="index.html" class="main-menu__link" role="menuitem">Inicio</a></li>
+          <li class="main-menu__item" role="none"><a href="secciones/actualidad.html" class="main-menu__link" role="menuitem">Actualidad</a></li>
+          <li class="main-menu__item" role="none"><a href="secciones/sociedad.html" class="main-menu__link" role="menuitem">Sociedad</a></li>
+          <li class="main-menu__item" role="none"><a href="secciones/deportes.html" class="main-menu__link" role="menuitem">Deportes</a></li>
+          <li class="main-menu__item" role="none"><a href="secciones/politica.html" class="main-menu__link" role="menuitem">Política</a></li>
+          <li class="main-menu__item" role="none"><a href="secciones/cultura.html" class="main-menu__link" role="menuitem">Cultura</a></li>
+          <li class="main-menu__item" role="none"><a href="multimedia/index.html" class="main-menu__link main-menu__link--special" role="menuitem">Multimedia</a></li>
+          <li class="main-menu__item" role="none"><a href="quienes-somos.html" class="main-menu__link main-menu__link--active" role="menuitem" aria-current="page">Quiénes Somos</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Menú principal">
+      <div class="mobile-nav__header">
+        <span class="brand-tagline">Paso al Costado</span>
+        <button class="mobile-nav__close" id="mobile-nav-close" aria-label="Cerrar menú">&times;</button>
+      </div>
+      <ul class="mobile-nav__list">
+        <li><a href="index.html" class="mobile-nav__link">Inicio</a></li>
+        <li><a href="secciones/actualidad.html" class="mobile-nav__link">Actualidad</a></li>
+        <li><a href="secciones/sociedad.html" class="mobile-nav__link">Sociedad</a></li>
+        <li><a href="secciones/deportes.html" class="mobile-nav__link">Deportes</a></li>
+        <li><a href="secciones/politica.html" class="mobile-nav__link">Política</a></li>
+        <li><a href="secciones/cultura.html" class="mobile-nav__link">Cultura</a></li>
+        <li><a href="multimedia/index.html" class="mobile-nav__link" style="color: var(--color-brand-primary);">Multimedia & Podcast</a></li>
+        <li><a href="quienes-somos.html" class="mobile-nav__link" style="color: var(--color-brand-primary);">Quiénes Somos</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       CONTENIDO INSTITUCIONAL (QUIÉNES SOMOS)
+       ====================================================================== -->
+  <main class="site-main" id="main-content">
+    <div class="container" style="max-width: 900px;">
+      
+      <!-- Miga de Pan -->
+      <nav class="breadcrumbs" aria-label="Ubicación" style="margin-top: var(--space-md);">
+        <a href="index.html">Inicio</a>
+        <span class="breadcrumbs__sep" aria-hidden="true">/</span>
+        <span class="breadcrumbs__current" aria-current="page">Quiénes Somos</span>
+      </nav>
+
+      <!-- Cabecera Institucional -->
+      <section class="section-hero" aria-labelledby="institutional-heading">
+        <span class="section-hero__tag">Manifiesto y Redacción</span>
+        <h1 id="institutional-heading" class="section-hero__title">Quiénes Somos</h1>
+        <p class="section-hero__desc">
+          Paso al Costado es un medio periodístico multimedial creado por estudiantes de Periodismo que busca abordar la actualidad desde una mirada cercana, rigurosa y contextualizada.
+        </p>
+      </section>
+
+      <!-- SECCIÓN 1: EL MANIFIESTO -->
+      <section class="section-block" aria-labelledby="manifiesto-heading" style="padding-top: 0;">
+        <h2 id="manifiesto-heading" class="sr-only">Manifiesto Editorial</h2>
+
+        <div class="manifesto-lead">
+          <p>
+            “Dar un paso al costado no es desentenderse de la realidad, sino apartarse del ritmo automático y la prisa algorítmica para mirar con mayor perspectiva. No queremos contarte únicamente qué pasó; queremos explicar por qué importa y de qué manera se conecta con tu vida cotidiana”.
+          </p>
+        </div>
+
+        <div class="article-body">
+          <h2>¿Qué es Paso al Costado?</h2>
+          <p>
+            Vivimos sumergidos en un flujo constante de información. Las redes sociales nos bombardean con titulares urgentes, placas llamativas y videos de pocos segundos. Sin embargo, muchas veces esa velocidad nos deja con una sensación de vacío: sabemos que algo ocurrió, pero no terminamos de comprender por qué pasó, quiénes son los verdaderos protagonistas ni qué consecuencias tendrá a futuro.
+          </p>
+          <p>
+            Frente a ese vértigo informativo, <strong>Paso al Costado</strong> propone una pausa activa. Creemos en un periodismo que saca el pie del acelerador: no para llegar tarde, sino para llegar con antecedentes, con datos verificados, con diversas perspectivas y con la claridad necesaria para que la información vuelva a tener sentido.
+          </p>
+
+          <h2>El Problema Informativo que Abordamos</h2>
+          <p>
+            La fragmentación de las noticias en redes genera una paradoja: estamos más informados que nunca en cantidad, pero más desorientados en profundidad. El periodismo no puede limitarse a competir por la atención inmediata con trucos de clickbait o indignación fácil.
+          </p>
+          <p>
+            Nuestra propuesta busca responder tres preguntas esenciales en cada cobertura:
+          </p>
+          <ul>
+            <li><strong>1. ¿Por qué importa?:</strong> Cuál es la trascendencia real detrás de lo que se viraliza.</li>
+            <li><strong>2. ¿Qué hay detrás?:</strong> Los antecedentes históricos, económicos o sociales que explican el hecho.</li>
+            <li><strong>3. ¿Cómo se relaciona con nuestra realidad?:</strong> De qué manera una ley, un fenómeno cultural o una tendencia deportiva modifica la vida cotidiana de las personas.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 2: PRINCIPIOS EDITORIALES -->
+      <section class="section-block" aria-labelledby="principles-heading" style="padding-top: 0;">
+        <header class="section-header">
+          <h2 id="principles-heading" class="section-header__title">Nuestros Criterios Periodísticos</h2>
+        </header>
+
+        <div class="principles-grid">
+          <div class="principle-card">
+            <span class="principle-card__num">01</span>
+            <h3 class="principle-card__title">Contexto y Profundidad</h3>
+            <p class="principle-card__text">
+              Rechazamos la primicia vacía. Priorizamos explicar causas y derivaciones por encima de la velocidad superficial.
+            </p>
+          </div>
+
+          <div class="principle-card">
+            <span class="principle-card__num">02</span>
+            <h3 class="principle-card__title">Cercanía sin Banalidad</h3>
+            <p class="principle-card__text">
+              Escribimos en un tono joven, directo y comprensible, pero sin recurrir a modismos forzados ni perder el rigor periodístico.
+            </p>
+          </div>
+
+          <div class="principle-card">
+            <span class="principle-card__num">03</span>
+            <h3 class="principle-card__title">Separación de Información y Opinión</h3>
+            <p class="principle-card__text">
+              Los hechos se investigan y se contrastan. La opinión o el análisis editorial se identifican con total transparencia.
+            </p>
+          </div>
+
+          <div class="principle-card">
+            <span class="principle-card__num">04</span>
+            <h3 class="principle-card__title">Cultura de Archivo y Propiedad</h3>
+            <p class="principle-card__text">
+              La web es nuestro hogar permanente y el archivo de nuestra producción estudiantil, independiente de las plataformas comerciales.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 3: EQUIPO DE REDACCIÓN (STAFF) -->
+      <section class="section-block" id="equipo" aria-labelledby="team-heading" style="padding-top: 0;">
+        <header class="section-header">
+          <h2 id="team-heading" class="section-header__title">Equipo de Redacción</h2>
+          <span style="font-size: var(--font-size-meta); color: var(--color-text-muted);">Estudiantes universitarios de Periodismo</span>
+        </header>
+
+        <p style="color: var(--color-text-secondary); margin-bottom: var(--space-xl);">
+          Paso al Costado es una producción periodística integral desarrollada a lo largo de un cuatrimestre universitario. Cada área editorial cuenta con estudiantes dedicados a la investigación, redacción, producción sonora y realización audiovisual:
+        </p>
+
+        <!-- ==================================================================
+             GUÍA PARA EL EQUIPO DE PERIODISMO:
+             ¿CÓMO AGREGAR, MODIFICAR O QUITAR INTEGRANTES?
+             - Para QUITAR una persona: eliminá todo el bloque <article class="team-card"> correspondiente.
+             - Para AGREGAR una persona: copiá y pegá un bloque <article class="team-card"> dentro de este contenedor.
+             - Para USAR FOTO REAL: reemplazá el <div> del avatar por:
+               <img src="img/equipo/nombre-integrante.jpg" alt="Nombre" style="width: 76px; height: 76px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-brand-primary); margin-bottom: var(--space-md);">
+             - La cuadrícula (grid) se reacomoda sola automáticamente en pantalla sin tocar CSS.
+             ================================================================== -->
+        <div class="team-grid">
+          <!-- INTEGRANTE 1: DIRECCIÓN EDITORIAL -->
+          <article class="team-card">
+            <div class="team-card__avatar" aria-hidden="true">[DE]</div>
+            <h3 class="team-card__name">[NOMBRE Y APELLIDO]</h3>
+            <p class="team-card__role">Dirección Editorial</p>
+            <p class="team-card__bio">
+              [Estudiante de Periodismo. Coordinación de la línea editorial, agenda temática y supervisión de las publicaciones].
+            </p>
+          </article>
+
+          <!-- INTEGRANTE 2: ACTUALIDAD Y POLÍTICA -->
+          <article class="team-card">
+            <div class="team-card__avatar" aria-hidden="true">[AP]</div>
+            <h3 class="team-card__name">[NOMBRE Y APELLIDO]</h3>
+            <p class="team-card__role">Actualidad & Política</p>
+            <p class="team-card__bio">
+              [Estudiante de Periodismo. Cobertura de políticas públicas, agenda legislativa y análisis de coyuntura].
+            </p>
+          </article>
+
+          <!-- INTEGRANTE 3: SOCIEDAD -->
+          <article class="team-card">
+            <div class="team-card__avatar" aria-hidden="true">[SO]</div>
+            <h3 class="team-card__name">[NOMBRE Y APELLIDO]</h3>
+            <p class="team-card__role">Sociedad & Ciudad</p>
+            <p class="team-card__bio">
+              [Estudiante de Periodismo. Historias de vida comunitaria, juventudes, educación y tensiones urbanas].
+            </p>
+          </article>
+
+          <!-- INTEGRANTE 4: DEPORTES -->
+          <article class="team-card">
+            <div class="team-card__avatar" aria-hidden="true">[DP]</div>
+            <h3 class="team-card__name">[NOMBRE Y APELLIDO]</h3>
+            <p class="team-card__role">Deportes</p>
+            <p class="team-card__bio">
+              [Estudiante de Periodismo. Análisis de fondo sobre disciplinas deportivas, clubes e historias de atletas].
+            </p>
+          </article>
+
+          <!-- INTEGRANTE 5: CULTURA (MÚSICA, CINE, ESPECTÁCULOS) -->
+          <article class="team-card">
+            <div class="team-card__avatar" aria-hidden="true">[CU]</div>
+            <h3 class="team-card__name">[NOMBRE Y APELLIDO]</h3>
+            <p class="team-card__role">Cultura & Espectáculos</p>
+            <p class="team-card__bio">
+              [Estudiante de Periodismo. Crítica de cine, tendencias musicales, artes escénicas y consumo cultural emergente].
+            </p>
+          </article>
+
+          <!-- INTEGRANTE 6: PRODUCCIÓN AUDIOVISUAL & PODCAST -->
+          <article class="team-card">
+            <div class="team-card__avatar" aria-hidden="true">[AV]</div>
+            <h3 class="team-card__name">[NOMBRE Y APELLIDO]</h3>
+            <p class="team-card__role">Producción Audiovisual & Podcast</p>
+            <p class="team-card__bio">
+              [Estudiante de Periodismo. Producción técnica de episodios de podcast en YouTube, cámaras, edición y sonido].
+            </p>
+          </article>
+
+          <!-- INTEGRANTE 7: REDES SOCIALES & COMUNIDAD -->
+          <article class="team-card">
+            <div class="team-card__avatar" aria-hidden="true">[SM]</div>
+            <h3 class="team-card__name">[NOMBRE Y APELLIDO]</h3>
+            <p class="team-card__role">Redes Sociales & Comunidad</p>
+            <p class="team-card__bio">
+              [Estudiante de Periodismo. Adaptación de piezas para Instagram (@pasoalcostado_) y TikTok, moderación y métricas].
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 4: CONTACTO Y REDACCIÓN -->
+      <section class="section-block" aria-labelledby="contact-heading" style="padding-top: 0;">
+        <header class="section-header">
+          <h2 id="contact-heading" class="section-header__title">Contacto y Redacción</h2>
+        </header>
+
+        <div class="sources-box" style="margin-top: 0; padding: var(--space-xl);">
+          <p style="font-size: var(--font-size-body); margin-bottom: var(--space-md);">
+            Para consultas periodísticas, sugerencias de coberturas, envío de información o contacto institucional con nuestro equipo docente y estudiantil:
+          </p>
+          <ul class="sources-box__list" style="font-size: var(--font-size-body-sm);">
+            <li><strong>Correo de Redacción:</strong> <a href="mailto:redaccion@pasoalcostado.com">[CORREO ELECTRÓNICO OFICIAL DE REDACCIÓN]</a></li>
+            <li><strong>Canal de YouTube:</strong> <a href="https://www.youtube.com/@pasoalcostado" target="_blank" rel="noopener noreferrer">youtube.com/@pasoalcostado</a></li>
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/pasoalcostado_/" target="_blank" rel="noopener noreferrer">instagram.com/pasoalcostado_</a></li>
+            <li><strong>TikTok:</strong> <a href="https://www.tiktok.com/@pasoalcostado_" target="_blank" rel="noopener noreferrer">tiktok.com/@pasoalcostado_</a></li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ======================================================================
+       PIE DE PÁGINA (FOOTER)
+       ====================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-col__title">Paso al Costado</h3>
+          <p class="footer-col__text">
+            Medio periodístico multimedial creado por estudiantes universitarios de Periodismo. Una propuesta para sacar el pie del acelerador y entender por qué importa aquello que pasa.
+          </p>
+          <p class="footer-col__text" style="font-weight: 600;">Redacción y producción independiente · 2026</p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col__title">Secciones</h3>
+          <ul class="footer-links">
+            <li><a href="secciones/actualidad.html">Actualidad</a></li>
+            <li><a href="secciones/sociedad.html">Sociedad</a></li>
+            <li><a href="secciones/deportes.html">Deportes</a></li>
+            <li><a href="secciones/politica.html">Política</a></li>
+            <li><a href="secciones/cultura.html">Cultura (Música, Cine, Espectáculo)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col__title">Multimedia</h3>
+          <ul class="footer-links">
+            <li><a href="multimedia/index.html">Hub Multimedia</a></li>
+            <li><a href="https://www.youtube.com/@pasoalcostado" target="_blank" rel="noopener noreferrer">Podcast en YouTube</a></li>
+            <li><a href="https://www.instagram.com/pasoalcostado_/" target="_blank" rel="noopener noreferrer">Instagram (@pasoalcostado_)</a></li>
+            <li><a href="https://www.tiktok.com/@pasoalcostado_" target="_blank" rel="noopener noreferrer">TikTok (@pasoalcostado_)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col__title">Institucional</h3>
+          <ul class="footer-links">
+            <li><a href="quienes-somos.html">Quiénes Somos / Manifiesto</a></li>
+            <li><a href="quienes-somos.html#equipo">Equipo de Redacción</a></li>
+            <li><a href="mailto:redaccion@pasoalcostado.com">[CORREO DE CONTACTO]</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Paso al Costado — Proyecto de Periodismo Multimedial Universitario.</p>
+        <p>Desarrollo web accesible y editable con estándares abiertos.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
