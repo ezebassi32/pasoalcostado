@@ -1,0 +1,442 @@
+/* ==========================================================================
+   PASO AL COSTADO — Estilos para Páginas de Nota y Secciones
+   Foco: Legibilidad editorial, jerarquía periodística y lectura sin fatiga.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. ESTRUCTURA Y CABECERA DE LA NOTA (ARTICLE HEADER)
+   -------------------------------------------------------------------------- */
+
+.article-page {
+  padding: var(--space-xl) 0 var(--space-3xl);
+}
+
+.article-container {
+  width: 100%;
+  max-width: var(--max-width-article);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1rem, 3.5vw, 1.5rem);
+  padding-right: clamp(1rem, 3.5vw, 1.5rem);
+}
+
+.article-container--wide {
+  max-width: 940px;
+}
+
+/* 1.1. Miga de Pan (Breadcrumbs) */
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--font-size-meta);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.breadcrumbs a {
+  color: var(--color-text-muted);
+}
+
+.breadcrumbs a:hover {
+  color: var(--color-brand-primary);
+}
+
+.breadcrumbs__sep {
+  opacity: 0.5;
+}
+
+.breadcrumbs__current {
+  color: var(--color-brand-primary);
+  font-weight: 700;
+}
+
+/* 1.2. Encabezado de la Nota */
+.article-header {
+  margin-bottom: var(--space-xl);
+}
+
+.article-header .badge-volanta {
+  font-size: 0.85rem;
+  margin-bottom: var(--space-xs);
+}
+
+.article-title {
+  font-size: var(--font-size-article-title);
+  line-height: 1.18;
+  color: var(--color-text-main);
+  margin-bottom: var(--space-md);
+  letter-spacing: -0.01em;
+}
+
+.article-lead {
+  font-size: var(--font-size-lead);
+  line-height: 1.55;
+  color: var(--color-text-secondary);
+  font-weight: 400;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+/* 1.3. Ficha de Autoría y Metadatos */
+.article-byline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  padding-bottom: var(--space-md);
+  margin-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.article-byline__author-box {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.article-byline__avatar-placeholder {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-bg-muted);
+  border: 1px solid var(--color-border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--color-brand-primary);
+  font-size: var(--font-size-body-sm);
+}
+
+.article-byline__meta {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-meta);
+  line-height: 1.35;
+}
+
+.article-byline__name {
+  font-weight: 700;
+  color: var(--color-text-main);
+  font-size: var(--font-size-body-sm);
+}
+
+.article-byline__role {
+  color: var(--color-text-muted);
+}
+
+.article-byline__date {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-meta);
+}
+
+/* --------------------------------------------------------------------------
+   2. FOTOGRAFÍA PRINCIPAL (HERO MEDIA) Y EPÍGRAFE
+   -------------------------------------------------------------------------- */
+
+.article-featured-media {
+  margin: var(--space-lg) 0 var(--space-xl);
+}
+
+.article-featured-media figure {
+  margin: 0;
+}
+
+.article-featured-media .card-media {
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-xs);
+}
+
+.article-caption {
+  font-size: var(--font-size-meta);
+  color: var(--color-text-muted);
+  line-height: 1.45;
+  padding: 0 var(--space-xs);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.article-caption__credit {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   3. CUERPO DE TEXTO Y LECTURA PERIODÍSTICA (ARTICLE BODY)
+   -------------------------------------------------------------------------- */
+
+.article-body {
+  font-size: var(--font-size-body);
+  line-height: 1.78;
+  color: var(--color-text-main);
+}
+
+.article-body p {
+  margin-bottom: var(--space-lg);
+}
+
+/* Párrafo inicial con caída sutil o destacado */
+.article-body p:first-of-type {
+  font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+/* Intertítulos de sección */
+.article-body h2 {
+  font-size: clamp(1.4rem, 2.4vw, 1.85rem);
+  margin-top: var(--space-2xl);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-2xs);
+  border-bottom: 2px solid var(--color-border-subtle);
+  color: var(--color-text-main);
+  line-height: 1.25;
+}
+
+.article-body h3 {
+  font-size: 1.25rem;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-sm);
+  color: var(--color-brand-primary);
+}
+
+/* Cita Destacada (Pull Quote) */
+.pull-quote {
+  margin: var(--space-xl) 0;
+  padding: var(--space-md) var(--space-lg);
+  background-color: var(--color-bg-muted);
+  border-left: 4px solid var(--color-brand-primary);
+  border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+}
+
+.pull-quote p {
+  font-family: var(--font-serif);
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  font-style: italic;
+  line-height: 1.45;
+  color: var(--color-text-main);
+  margin-bottom: var(--space-xs);
+}
+
+.pull-quote cite {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-meta);
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-brand-primary);
+}
+
+/* Enlaces y fuentes en el cuerpo */
+.article-body a {
+  color: var(--color-brand-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+}
+
+.article-body a:hover {
+  color: var(--color-brand-hover);
+}
+
+/* Caja de Fuentes y Documentos Consultados */
+.sources-box {
+  margin: var(--space-2xl) 0;
+  padding: var(--space-md);
+  background-color: var(--color-bg-card-alt);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+}
+
+.sources-box__title {
+  font-size: var(--font-size-body-sm);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-brand-primary);
+  margin-bottom: var(--space-xs);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.sources-box__list {
+  font-size: var(--font-size-meta);
+  color: var(--color-text-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+.sources-box__list li {
+  position: relative;
+  padding-left: var(--space-md);
+}
+
+.sources-box__list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--color-brand-primary);
+}
+
+/* Inserción Multimedia en la Nota (Embeds de YouTube / Podcast) */
+.article-media-embed {
+  margin: var(--space-xl) 0;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--color-border-subtle);
+}
+
+.article-media-embed .placeholder-media {
+  padding: var(--space-xl);
+}
+
+/* --------------------------------------------------------------------------
+   4. FICHA DE AUTOR/A AL PIE DE LA NOTA
+   -------------------------------------------------------------------------- */
+
+.author-bio-card {
+  margin-top: var(--space-2xl);
+  padding: var(--space-lg);
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+@media (min-width: 600px) {
+  .author-bio-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.author-bio-card__avatar {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: var(--color-bg-muted);
+  border: 2px solid var(--color-brand-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-brand-primary);
+  flex-shrink: 0;
+}
+
+.author-bio-card__info {
+  flex-grow: 1;
+}
+
+.author-bio-card__name {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: 2px;
+}
+
+.author-bio-card__role {
+  font-size: var(--font-size-meta);
+  font-weight: 600;
+  color: var(--color-brand-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: var(--space-xs);
+}
+
+.author-bio-card__desc {
+  font-size: var(--font-size-body-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   5. MÓDULO DE LECTURAS RELACIONADAS
+   -------------------------------------------------------------------------- */
+
+.related-section {
+  margin-top: var(--space-3xl);
+  padding-top: var(--space-xl);
+  border-top: 2px solid var(--color-text-main);
+}
+
+.related-section__title {
+  font-size: var(--font-size-section-heading);
+  text-transform: uppercase;
+  margin-bottom: var(--space-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+/* --------------------------------------------------------------------------
+   6. ESTILOS PARA PÁGINAS DE SECCIÓN (SECTIONS PAGES)
+   -------------------------------------------------------------------------- */
+
+.section-hero {
+  padding: var(--space-xl) 0 var(--space-lg);
+  border-bottom: 2px solid var(--color-text-main);
+  margin-bottom: var(--space-xl);
+}
+
+.section-hero__tag {
+  font-size: var(--font-size-badge);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-brand-primary);
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+
+.section-hero__title {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  color: var(--color-text-main);
+  margin-bottom: var(--space-xs);
+}
+
+.section-hero__desc {
+  font-size: var(--font-size-lead);
+  color: var(--color-text-secondary);
+  max-width: 780px;
+  line-height: 1.5;
+}
+
+.section-lead-story {
+  margin-bottom: var(--space-2xl);
+}
+
+.section-articles-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 640px) {
+  .section-articles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .section-articles-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
